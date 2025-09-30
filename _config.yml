@@ -1,0 +1,9 @@
+title: "Sriker Paturi — Cybersecurity & GRC"
+minimal_mistakes_skin: "dark"
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+include:
+  - assets
+
+# PWA/Theme color
+theme_color: "#7C3AED"

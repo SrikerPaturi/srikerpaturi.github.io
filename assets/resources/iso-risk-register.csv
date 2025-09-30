@@ -1,0 +1,2 @@
+risk_id,asset,threat,vulnerability,likelihood,impact,priority,owner,treatment
+R-001,Prod DB,Credential stuffing,Weak MFA,3,4,High,,Mitigate

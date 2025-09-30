@@ -1,0 +1,24 @@
+---
+---
+// Color overrides
+$brand-color: #7C3AED; // violet-600
+$accent-color: #60A5FA; // blue-400
+$link-color: $accent-color;
+$text-color: #E5E7EB; // gray-200
+$background-color: #0B0F17;
+$muted-text-color: #9CA3AF;
+$border-color: rgba(255,255,255,0.08);
+$btn-primary-color: $background-color;
+$btn-primary-bg: $brand-color;
+$code-background-color: #0F172A;
+$code-text-color: #E2E8F0;
+
+@import "minimal-mistakes/skins/dark";
+@import "minimal-mistakes";
+
+.site-title, .page__title, h1, h2, h3 { letter-spacing: 0.02em; }
+a:hover { text-decoration: none; filter: brightness(1.08); }
+.archive__item { transition: transform 160ms ease, box-shadow 160ms ease; }
+.archive__item:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.25); }
+.page__hero--overlay { background-color: rgba(10,14,22,0.65); }
+.notice--primary { border-left: 3px solid $brand-color; background: rgba(124,58,237,0.08); }
