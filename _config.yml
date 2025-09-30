@@ -1,9 +1,83 @@
 title: "Sriker Paturi — Cybersecurity & GRC"
-minimal_mistakes_skin: "dark"
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+description: "Discipline. Security. Strength. — ISO 27001 | Security Analyst | GRC"
 
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "dark"
+
+# Optional: improves some browser UI color
+theme_color: "#7C3AED"
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Ensure Jekyll processes these folders
 include:
+  - _pages
+  - _projects
   - assets
 
-# PWA/Theme color
-theme_color: "#7C3AED"
+# Navigation
+nav:
+  - title: "Home"
+    url: /
+  - title: "Projects"
+    url: /projects/
+  - title: "Blog"
+    url: /blog/
+  - title: "Videos"
+    url: /videos/
+  - title: "About"
+    url: /about/
+  - title: "Resources"
+    url: /resources/
+
+# Author box + social
+author:
+  name: "Sriker Paturi"
+  avatar: "/assets/img/sriker-avatar.jpg"
+  bio: "Cybersecurity & GRC Analyst • Swim Coach | Warrior mindset."
+  location: "India → Colorado"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/"
+    - label: "YouTube"
+      icon: "fab fa-youtube"
+      url: "https://youtube.com/"
+
+# Plugins GitHub Pages can build
+plugins:
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Blog pagination (optional)
+paginate: 5
+paginate_path: "/blog/page:num"
+
+# Defaults (nice layouts out of the box)
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+      read_time: true
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "single"
+      author_profile: true
+      share: true
+      comments: false
